@@ -1,0 +1,16 @@
+public class binary_search
+{
+  public static void main(char search){
+      char arr[]={'A','H', 'N','P','S','U', 'W','Y', 'Z', 'b', 'd'};//TOTAL 0 TO 10 ELEMENTS
+      int flag=0;int low=0,high=10;int mid=0;
+      while(low<=high){ //as long as low is less than or equal to high
+          if(search>arr[mid]) low=mid+1;//if searching element  is greater than middle element add 1 in the middle element
+       else if(search<arr[mid]) high=mid-1;//searching element is present below middle element
+       else flag=1; break;// if element found add 1 to flag and break the loop
+      }
+    if(flag==1) System.out.println("BINARY Search Successful: Element found:"+search);//print the result
+    else System.out.println("BINARY Search NOT Successful: Element NOT found: "+search); 
+  }}
+ 
+  
+
