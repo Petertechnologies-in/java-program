@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class palindrome_word // mom  is palindrome string
+{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String word=sc.nextLine();// for receiving input
+int len=word.length();// find length of word
+String reverse="";// for storing reversed word
+for(int i=len-1;i>=0;i--){ // reading it from the last word
+   reverse=reverse+word.charAt(i); // extracting character
+   }
+System.out.println("---------------------------");
+System.out.println("original word:- "+word); //print result
+System.out.println("Reverse word:- "+reverse);
+System.out.println("---------------------------");
+System.out.println();
+if(reverse.equals(word))System.out.println("Its a Palindrome String");// comparing string
+else System.out.println("Not a palindrome String");
+}
+}
